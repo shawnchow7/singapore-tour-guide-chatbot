@@ -10,9 +10,9 @@ client = OpenAI()
 # first is to define the conversation
 conversation = [    {"role":"system", "content": "You are a tour guide who is designed to provide information about what tourists should do in Singapore"},
                     {"role":"user", "content": "what is the famous landmark in Singapore?"},
-                    {"role": "assistant", "content": "The famous landmark in Singapore is Marina Bay Sands"}
-                    
+                    {"role": "assistant", "content": "The famous landmark in Singapore is Marina Bay Sands"} 
                ]
+
 #your own list of questions that you can ask to the chat bot
 users_qn=["what are some popular places in Singapore", "What should i be doing in Singapore"]
 
@@ -42,3 +42,7 @@ for q in users_qn:
 
     #to add the answer back to the conversation
     assistant_dict={"role":"assitant", "content": answer}
+
+    question_no=question_no+1
+
+
